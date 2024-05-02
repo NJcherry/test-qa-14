@@ -6,8 +6,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class TextBoxTests {
 
@@ -44,5 +43,6 @@ public class TextBoxTests {
         inputEmailId.shouldHave(Condition.text(EMAIL));
         inputCurAddress.shouldHave(Condition.text(CUR_ADDRESS));
         inputPerAddress.shouldHave(Condition.text(PER_ADDRESS));
+        closeWebDriver();
     }
 }

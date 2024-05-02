@@ -1,6 +1,5 @@
 package com.demoqa;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
@@ -75,7 +74,7 @@ public class PracticeFormTests {
         $(".table-responsive table").$(byText("Picture")).parent().shouldHave(text("Siyanie-Severa-1.png"));
         $(".table-responsive table").$(byText("Address")).parent().shouldHave(text(CUR_ADDRESS));
         $(".table-responsive table").$(byText("State and City")).parent().shouldHave(text("Rajasthan"), text("Jaipur"));
-
+        closeWebDriver();
         //sleep(30_000);
     }
     }
