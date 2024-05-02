@@ -76,6 +76,6 @@ public class PracticeFormTests {
         $(".table-responsive table").$(byText("Address")).parent().shouldHave(text(CUR_ADDRESS));
         $(".table-responsive table").$(byText("State and City")).parent().shouldHave(text("Rajasthan"), text("Jaipur"));
 
-        sleep(30_000);
+        //sleep(30_000);
     }
     }
