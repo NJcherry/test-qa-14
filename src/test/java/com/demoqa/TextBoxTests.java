@@ -3,6 +3,7 @@ package com.demoqa;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -43,6 +44,10 @@ public class TextBoxTests {
         inputEmailId.shouldHave(Condition.text(EMAIL));
         inputCurAddress.shouldHave(Condition.text(CUR_ADDRESS));
         inputPerAddress.shouldHave(Condition.text(PER_ADDRESS));
+    }
+
+    @AfterAll
+    static void closeWebDriver() {
         closeWebDriver();
     }
 }
