@@ -27,6 +27,7 @@ public class HomeworkSelenideGithubTest {
         $("#wiki-pages-box").shouldHave(Condition.text("SoftAssertions"));
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $$("h4").last().scrollTo().shouldHave(Condition.text("3. Using JUnit5 extend test class:"));
+
         closeWebDriver();
     }
 }

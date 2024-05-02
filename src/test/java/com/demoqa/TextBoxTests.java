@@ -43,6 +43,7 @@ public class TextBoxTests {
         inputEmailId.shouldHave(Condition.text(EMAIL));
         inputCurAddress.shouldHave(Condition.text(CUR_ADDRESS));
         inputPerAddress.shouldHave(Condition.text(PER_ADDRESS));
+
         closeWebDriver();
     }
 }
