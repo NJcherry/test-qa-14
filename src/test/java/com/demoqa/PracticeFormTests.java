@@ -19,7 +19,7 @@ public class PracticeFormTests {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "800x600";
         Configuration.pageLoadStrategy = "eager";
-}
+    }
 
     private final String FIRST_NAME = "John";
     private final String LAST_NAME = "Doe";
@@ -78,4 +78,4 @@ public class PracticeFormTests {
         closeWebDriver();
         //sleep(30_000);
     }
-    }
+}
