@@ -12,7 +12,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationPage {
     CalendarComponent calendarComponent = new CalendarComponent();
     RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
-    private final String TITLE_TEXT = "Student Registration Form";
 
     public RegistrationPage openPage() {
         open("/automation-practice-form");
@@ -22,15 +21,16 @@ public class RegistrationPage {
         return this;
     }
 
-    private final String FIRST_NAME = "John";
-    private final String LAST_NAME = "Doe";
-    private final String EMAIL = "jdoe@gmail.com";
-    private final String GENDER = "Female";
-    private final String MOBILE = "9210642487";
-    private final String HOBBY = "Music";
+    private final String FIRST_NAME = "John",
+            LAST_NAME = "Doe",
+            EMAIL = "jdoe@gmail.com",
+            GENDER = "Female",
+            MOBILE = "9210642487",
+            HOBBY = "Music",
+            CUR_ADDRESS = "Some St, 1",
+            SUBJECT = "Arts";
+
     File file = new File("src/test/resources/Siyanie-Severa-1.png");
-    private final String CUR_ADDRESS = "Some St, 1";
-    private final String SUBJECT = "Arts";
 
     private final SelenideElement
             firstName = $("#firstName"),
