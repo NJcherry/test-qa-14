@@ -6,14 +6,15 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomUtils {
 
+    public static String[] subjects = {"Hindi", "English", "Maths", "Physics", "Chemistry", "Biology", "Computer Science",
+            "Commerce", "Accounting", "Economics", "Arts", "Social Studies", "History", "Civics"};
+
     public static void main(String[] args) {
         System.out.println(getRandomString(10));
         System.out.println(getRandomInt(10, 100));
         System.out.println(getRandomEmail());
         System.out.println(getRandomPhoneNumber());
 
-        String [] names = {"a", "b", "c", "d", "e"};
-        System.out.println(getRandomItemFromArray(names));
     }
 
     public static int getRandomInt(int min, int max) {
@@ -56,4 +57,38 @@ public class RandomUtils {
         return genders[randomIndex];
     }
 
+    public static String getRandomHobby() {
+        String[] hobbies = {"Sports", "Reading", "Music"};
+        int randomIndex = (int) (Math.random() * hobbies.length);
+        return hobbies[randomIndex];
+    }
+
+    public static String getRandomState() {
+        String[] states = {"NCR", "Uttar Pradesh", "Haryana", "Rajasthan"};
+        int randomIndex = (int) (Math.random() * states.length);
+        return states[randomIndex];
+    }
+
+    public static String getRandomCity(String state) {
+        switch (state) {
+            case "NCR":
+                String[] ncrCities = {"Delhi", "Gurgaon", "Noida"};
+                int ncrIndex = (int) (Math.random() * ncrCities.length);
+                return ncrCities[ncrIndex];
+            case "Uttar Pradesh":
+                String[] upCities = {"Agra", "Lucknow", "Merrut"};
+                int upIndex = (int) (Math.random() * upCities.length);
+                return upCities[upIndex];
+            case "Haryana":
+                String[] haryanaCities = {"Karnal", "Panipat"};
+                int haryanaIndex = (int) (Math.random() * haryanaCities.length);
+                return haryanaCities[haryanaIndex];
+            case "Rajasthan":
+                String[] rajasthanCities = {"Jaipur", "Jaiselmer"};
+                int rajasthanIndex = (int) (Math.random() * rajasthanCities.length);
+                return rajasthanCities[rajasthanIndex];
+            default:
+                return "";
+        }
+    }
 }

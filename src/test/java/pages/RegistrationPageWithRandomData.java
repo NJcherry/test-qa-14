@@ -28,9 +28,7 @@ public class RegistrationPageWithRandomData {
     }
 
     private final String
-            HOBBY = "Music",
-            CUR_ADDRESS = "Some St, 1",
-            SUBJECT = "Arts";
+            HOBBY = "Music";
 
     File file = new File("src/test/resources/Siyanie-Severa-1.png");
 
@@ -82,13 +80,13 @@ public class RegistrationPageWithRandomData {
         return this;
     }
 
-    public RegistrationPageWithRandomData setHobby() {
+    public RegistrationPageWithRandomData setHobby(String hobbyData) {
         hobby.click();
         return this;
     }
 
-    public RegistrationPageWithRandomData setAddress() {
-        curAddress.setValue(CUR_ADDRESS);
+    public RegistrationPageWithRandomData setAddress(String addressData) {
+        curAddress.setValue(addressData);
         return this;
     }
 
@@ -97,18 +95,18 @@ public class RegistrationPageWithRandomData {
         return this;
     }
 
-    public RegistrationPageWithRandomData setSubject() {
-        subject.setValue(SUBJECT).pressEnter();
+    public RegistrationPageWithRandomData setSubject(String subjectData) {
+        subject.setValue(subjectData).pressEnter();
         return this;
     }
 
-    public RegistrationPageWithRandomData setState() {
+    public RegistrationPageWithRandomData setState(String stateData) {
         state.scrollTo().click();
         stateOption.click();
         return this;
     }
 
-    public RegistrationPageWithRandomData setCity() {
+    public RegistrationPageWithRandomData setCity(String cityData) {
         city.click();
         cityOption.click();
         return this;
