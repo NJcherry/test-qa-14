@@ -27,9 +27,6 @@ public class RegistrationPageWithRandomData {
         return this;
     }
 
-    private final String
-            HOBBY = "Music";
-
     File file = new File("src/test/resources/Siyanie-Severa-1.png");
 
     private final SelenideElement
@@ -39,14 +36,12 @@ public class RegistrationPageWithRandomData {
             GENDER = $("#genterWrapper"),
             mobile = $("#userNumber"),
             birthDate = $("#dateOfBirthInput"),
-            hobby = $(byText(HOBBY)),
+            hobby = $("#hobbiesWrapper"),
             curAddress = $("#currentAddress"),
             uploadFile = $("#uploadPicture"),
             subject = $("#subjectsInput"),
             city = $("#city"),
             state = $("#state"),
-            stateOption = $("#react-select-3-option-3"),
-            cityOption = $("#react-select-4-option-0"),
             submitButton = $("#submit");
 
     public RegistrationPageWithRandomData setFirstName(String firstNameData) {
@@ -81,7 +76,7 @@ public class RegistrationPageWithRandomData {
     }
 
     public RegistrationPageWithRandomData setHobby(String hobbyData) {
-        hobby.click();
+        hobby.$(byText(hobbyData)).click();
         return this;
     }
 
@@ -102,13 +97,13 @@ public class RegistrationPageWithRandomData {
 
     public RegistrationPageWithRandomData setState(String stateData) {
         state.scrollTo().click();
-        stateOption.click();
+        $(byText(stateData)).click();
         return this;
     }
 
     public RegistrationPageWithRandomData setCity(String cityData) {
         city.click();
-        cityOption.click();
+        $(byText(cityData)).click();
         return this;
     }
 

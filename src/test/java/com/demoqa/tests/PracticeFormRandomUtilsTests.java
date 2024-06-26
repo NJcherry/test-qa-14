@@ -1,11 +1,7 @@
-package com.demoqa;
+package com.demoqa.tests;
 
 
-import com.demoqa.data.TestData;
-import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static utils.RandomUtils.*;
+import com.demoqa.TestBaseForRandomData;
 
 public class PracticeFormRandomUtilsTests extends TestBaseForRandomData {
 

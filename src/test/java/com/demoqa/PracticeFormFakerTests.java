@@ -38,7 +38,7 @@ public class PracticeFormFakerTests extends TestBaseForRandomData {
                 .verifyResult("Address", td.address)
                 .verifyResult("Picture", "Siyanie-Severa-1.png")
                 .verifyResult("Subjects", td.SUBJECTS)
-                .verifyResult("State and City", td.STATE + td.CITY);
+                .verifyResult("State and City", td.STATE + " " + td.CITY);
 
         //sleep(30_000);
         closeWebDriver();
