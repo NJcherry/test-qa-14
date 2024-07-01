@@ -2,7 +2,7 @@ package com.demoqa.data;
 
 import com.github.javafaker.Faker;
 
-import static utils.RandomUtils.*;
+import static com.demoqa.utils.RandomUtils.*;
 
 public class TestData {
     Faker faker = new Faker();

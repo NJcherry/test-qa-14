@@ -1,4 +1,4 @@
-package utils;
+package com.demoqa.utils;
 
 import java.security.SecureRandom;
 import java.util.Random;

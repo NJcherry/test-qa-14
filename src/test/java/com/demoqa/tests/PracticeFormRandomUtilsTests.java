@@ -1,9 +1,9 @@
 package com.demoqa.tests;
 
 
-import com.demoqa.TestBaseForRandomData;
+import com.demoqa.config.TestBase;
 
-public class PracticeFormRandomUtilsTests extends TestBaseForRandomData {
+public class PracticeFormRandomUtilsTests extends TestBase {
 
 //    @Test
 //    void successfulRegistrationTest() {

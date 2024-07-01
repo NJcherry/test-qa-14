@@ -1,17 +1,19 @@
-package com.demoqa;
+package com.demoqa.tests;
 
 
+import com.demoqa.config.TestBase;
 import com.demoqa.data.TestData;
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
+import com.demoqa.pages.RegistrationPageWithRandomData;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class PracticeFormFakerTests extends TestBaseForRandomData {
+public class PracticeFormFakerTests extends TestBase {
 
     @Test
     void successfulRegistrationTest() {
         TestData td = new TestData();
+        RegistrationPageWithRandomData registrationPageWithRandomData = new RegistrationPageWithRandomData();
 
         registrationPageWithRandomData.openPage()
                 .setFirstName(td.userName)

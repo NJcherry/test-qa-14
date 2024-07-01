@@ -1,12 +1,15 @@
-package com.demoqa;
+package com.demoqa.tests;
 
 
+import com.demoqa.config.TestBase;
 import org.junit.jupiter.api.Test;
+import com.demoqa.pages.RegistrationPage;
 
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormPageObjectTests extends TestBase {
+    RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
     void successfulRegistrationTest() {

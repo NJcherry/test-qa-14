@@ -1,15 +1,14 @@
-package pages;
+package com.demoqa.pages;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.components.CalendarComponent;
-import pages.components.RegistrationResultsModal;
-import utils.RandomUtils;
+import com.demoqa.pages.components.CalendarComponent;
+import com.demoqa.pages.components.RegistrationResultsModal;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static utils.RandomUtils.*;
+import static com.demoqa.utils.RandomUtils.*;
 
 public class RegistrationPageWithRandomData {
     CalendarComponent calendarComponent = new CalendarComponent();
