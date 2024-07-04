@@ -2,10 +2,13 @@ package com.demoqa.data;
 
 import com.github.javafaker.Faker;
 
+import java.io.File;
+
 import static com.demoqa.utils.RandomUtils.*;
 
 public class TestData {
     Faker faker = new Faker();
+    public File image = new File("src/test/resources/Siyanie-Severa-1.png");
 
     public String GENDER = getRandomGender(),
     SUBJECTS = getRandomItemFromArray(subjects),
