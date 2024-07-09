@@ -3,6 +3,7 @@ package com.demoqa.tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import com.demoqa.config.TestBase;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -19,16 +20,16 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Тестовая форма demoqa")
-public class PracticeFormTests {
+public class PracticeFormTests extends TestBase {
 
-    @BeforeAll
-    static void configure() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "800x600";
-        Configuration.pageLoadStrategy = "eager";
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
-    }
+//    @BeforeAll
+//    static void configure() {
+//        Configuration.baseUrl = "https://demoqa.com";
+//        Configuration.browserSize = "800x600";
+//        Configuration.pageLoadStrategy = "eager";
+//        SelenideLogger.addListener("allure", new AllureSelenide());
+//
+//    }
 
     private final String FIRST_NAME = "John";
     private final String LAST_NAME = "Doe";
