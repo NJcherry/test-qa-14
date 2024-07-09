@@ -44,6 +44,6 @@ public class TextBoxTests {
         inputCurAddress.shouldHave(Condition.text(CUR_ADDRESS));
         inputPerAddress.shouldHave(Condition.text(PER_ADDRESS));
 
-        closeWebDriver();
+     //   closeWebDriver();
     }
 }

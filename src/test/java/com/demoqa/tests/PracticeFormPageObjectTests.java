@@ -42,7 +42,7 @@ public class PracticeFormPageObjectTests extends TestBase {
                 .verifyResult("State and City", "Rajasthan Jaipur");
 
         //sleep(30_000);
-        closeWebDriver();
+//        closeWebDriver();
 
     }
 }

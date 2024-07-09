@@ -48,7 +48,7 @@ public class PracticeFormFakerTests extends TestBase {
                 .verifyResult("State and City", td.STATE + " " + td.CITY);
 
         //sleep(30_000);
-        closeWebDriver();
+//        closeWebDriver();
 
     }
 }

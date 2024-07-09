@@ -130,7 +130,7 @@ public class PracticeFormTests extends TestBase {
                     text(HOBBY), text(IMAGE), text(STATE), text(CITY));
         });
 
-        closeWebDriver();
+//        closeWebDriver();
         //sleep(30_000);
     }
 }
