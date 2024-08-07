@@ -15,9 +15,9 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class PracticeFormFakerTests extends TestBase {
 
     @Test
-    @Tag("faker")
     @DisplayName("Тест c faker на заполнение формы")
     @Severity(SeverityLevel.BLOCKER)
+    @Tag("faker")
     void successfulRegistrationTest() {
         TestData td = new TestData();
         RegistrationPageWithRandomData registrationPageWithRandomData = new RegistrationPageWithRandomData();
