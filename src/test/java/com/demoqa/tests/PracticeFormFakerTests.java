@@ -6,6 +6,7 @@ import com.demoqa.data.TestData;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import com.demoqa.pages.RegistrationPageWithRandomData;
 
@@ -14,11 +15,17 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class PracticeFormFakerTests extends TestBase {
 
     @Test
+    @Tag("faker")
     @DisplayName("Тест c faker на заполнение формы")
     @Severity(SeverityLevel.BLOCKER)
     void successfulRegistrationTest() {
         TestData td = new TestData();
         RegistrationPageWithRandomData registrationPageWithRandomData = new RegistrationPageWithRandomData();
+
+        System.getProperty("browser_name", "firefox");
+        System.getProperty("browser_version", "101");
+        System.getProperty("browser_size", "1920x1080");
+        System.getProperty("browser_remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         registrationPageWithRandomData.openPage()
                 .setFirstName(td.userName)

@@ -23,9 +23,11 @@ public class SystemPropertiesTest {
         String browserName = System.getProperty("browser_name", "firefox");
         String browserVersion = System.getProperty("browser_version", "101");
         String browserSize = System.getProperty("browser_size", "1920x1080");
+        String browserRemote = System.getProperty("browser_remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         System.out.println(browserName);
         System.out.println(browserVersion);
         System.out.println(browserSize);
+        System.out.println(browserRemote);
     }
 
     @Test
