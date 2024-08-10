@@ -62,3 +62,9 @@ task hello_test(type: Test) {
         includeTags "hello"
     }
 }
+
+task faker_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "faker"
+    }
+}
