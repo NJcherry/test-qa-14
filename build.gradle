@@ -68,3 +68,9 @@ task faker_test(type: Test) {
         includeTags "faker"
     }
 }
+
+task github_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "github"
+    }
+}

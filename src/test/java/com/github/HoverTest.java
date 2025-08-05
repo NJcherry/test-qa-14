@@ -2,6 +2,7 @@ package com.github;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -16,11 +17,12 @@ public class HoverTest {
     }
 
     @Test
+    @Tag("github")
     void testHover() {
         open("https://github.com/");
-        $(".Header-old").$(byText("Solutions")).hover();
-        $("[aria-labelledby='solutions-for-heading']").$(byText("Enterprise")).click();
-        $("#hero-section-brand-heading").shouldHave(text("The AI-powered"), text("developer platform."));
+        $(".HeaderMenu-nav").$(byText("Solutions")).hover();
+        $("[aria-labelledby ='solutions-by-company-size-heading']").$(byText("Enterprises")).click();
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered"), text("developer platform"));
 
        // sleep(30_000);
     }
