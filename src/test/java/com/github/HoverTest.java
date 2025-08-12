@@ -22,7 +22,7 @@ public class HoverTest {
         open("https://github.com/");
         $(".HeaderMenu-nav").$(byText("Solutions")).hover();
         $("[aria-labelledby ='solutions-by-company-size-heading']").$(byText("Enterprises")).click();
-        $("#hero-section-brand-heading").shouldHave(text("The AI-powered"), text("developer platform"));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered developer platform"));
 
        // sleep(30_000);
     }
