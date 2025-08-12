@@ -14,6 +14,7 @@ public class HoverTest {
     static void configure() {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
+        Configuration.timeout = 8000;
     }
 
     @Test
